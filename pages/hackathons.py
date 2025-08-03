@@ -29,7 +29,7 @@ with body:
             for i in range(len(hackathon["images"])):
                 image = hackathon["images"][i]
                 with columns[i]:
-                    st.image(image["path"], width=500 * image["width"])
+                    st.image(image["path"], use_container_width=True)
                     
         st.divider()
 
